@@ -7,6 +7,7 @@ by Eva Garcia Martin
 	- jupyter notebook: `CNN.ipynb`
 - models: pre-trained models
 - png: figures for the report
+- report: report md and pdf
 
 ### Report
 - report.pdf generated from report.md with the following command:

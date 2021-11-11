@@ -1,5 +1,6 @@
 # Music Genre Classification using CNNs
 *Eva Garcia Martin*
+[Github repo](https://github.com/egarciamartin/music-genre-cnn) 
 
 ## The Problem
 *Problem Description* 
@@ -205,8 +206,6 @@ A very good thread on this: [link](https://stats.stackexchange.com/questions/255
 
 What is left? I would like to try and see if pre-trained networks on imagenet such as ResNet or VGG16 end up giving a good result on this problem. I have tried running ResNet50 pre-trained on ImageNet and it was getting ok results, though overfitting, and it seemed like an overkill for this kind of project. I believe I can get a higher validation accuracy on the LeNet architecture, but I leave that for future improvements. 
 
-## Acknowledgments
-Work done as a collaboration with the ML team at Epidemic Sound.
 
 ## References
 [1] LeCun, Yann, et al. "Backpropagation applied to handwritten zip code recognition." Neural computation 1.4 (1989): 541-551.

@@ -32,7 +32,7 @@ The total number of files is 1,000.
 
 An extract from a blues .wav file is shown in Figure 1.
 
-![Example of a 'blues' song](png/blues.png)
+![Example of a 'blues' song](../png/blues.png)
 
 To process the data in python I have used the `librosa` library, where one can trim the signal, obtain the spectogram, and many more fun tricks. 
 
@@ -44,7 +44,7 @@ The question that I am trying to answer is: How can I construct features that wi
 
 That was exactly what I was looking for, since I was looking for features that resembled visual representations of the signal, since visual features is what CNNs are good at learning from. An example of the mel-spectogram from the signal from Figure 1 is shown in Figure 2.  
 
-![Mel Spectogram](png/blues_mel_spect.png)
+![Mel Spectogram](../png/blues_mel_spect.png)
 
 Once I had that covered, the next point to take into consideration is the small dataset that I have. As a first try I tried learning from the different spectograms from the original data, using the CNN, but it was overfitting extremely easily. 
 So I decided to use Data Augmentation to increase the size of the dataset, helping also at avoiding overfitting. In this step I did 6 different transformations:   
@@ -182,7 +182,7 @@ The results of running the models presented above are presented in the following
 As explained before, the best non-overfitting model is the CNN-64, with 87% of accuracy on the training, validation, and test sets. 
 Figure 3 shows the validation and training accuracy for each epoch. 
 
-![CNN64 - Training and Validation Accuracy per epoch](png/cnn64_hist.png)
+![CNN64 - Training and Validation Accuracy per epoch](../png/cnn64_hist.png)
 
 
 The script ``cnn.py`` can be used to train either the CNN-64 or the LeNet-5 models on the GTZAN datasets. 
